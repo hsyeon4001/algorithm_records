@@ -22,3 +22,27 @@ len = int(input())
 for i in range(len):
     a, b = map(int, sys.stdin.readline().split())
     print(a + b)
+
+# 2741번
+n = int(input())
+for i in range(1, n+1):
+    print(i)
+
+# 2742번
+n = int(input())
+for i in range(n, 0, -1):
+    print(i)
+
+# 11021번
+import sys
+len = int(input())
+for i in range(1, len+1):
+    a, b = map(int, sys.stdin.readline().split())
+    print("Case #{}: {}".format(i, a+b))
+
+# 11022번
+import sys
+len = int(input())
+for i in range(1, len+1):
+    a, b = map(int, sys.stdin.readline().split())
+    print("Case #{}: {} + {} = {}".format(i, a, b, a+b))
