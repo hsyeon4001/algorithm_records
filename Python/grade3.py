@@ -46,3 +46,22 @@ len = int(input())
 for i in range(1, len+1):
     a, b = map(int, sys.stdin.readline().split())
     print("Case #{}: {} + {} = {}".format(i, a, b, a+b))
+
+# 2438번
+len = int(input())
+for i in range(1, len+1):
+    print("*" * i)
+
+# 2439번
+len = int(input())
+for i in range(1, len+1):
+    print(' '*(len - i) + '*'*i)
+
+# 10871번
+a = list(map(int, input().split()))
+arr = list(map(int, input().split()))
+answer = []
+for ele in arr:
+    if a[1] > ele:
+        answer.append(str(ele))
+print(" ".join(answer))
