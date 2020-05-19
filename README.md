@@ -1,5 +1,5 @@
 ## 알고리즘 풀이 기록 저장소입니다.
-#### 사용 언어 : Javascript, Python
+#### 사용 언어 : Python
 #### 문제 출처 : https://www.acmicpc.net/
 
 * * *
@@ -13,3 +13,4 @@
 - 20.05.15 백준 5단계 풀이 commit (1)
 - 20.05.16 백준 5단계 풀이 commit (2), 퀵 정렬 작성 commit
 - 20.05.17 백준 6단계 풀이 commit (1)
+- 20.05.19 백준 6단계 풀이 commit (2), 캐싱 작성 commit

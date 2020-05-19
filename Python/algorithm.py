@@ -9,3 +9,15 @@ def quicksort(array):
         return quicksort(less) + [pivot] + quicksort(greater)
         
 print(quicksort([1, 5, 3, 98, 2]))
+
+# 캐싱
+cache = {}
+
+def get_page(url):
+    if cache.get(url):
+        return cache[url]
+    else:
+        data = get_data_from_server(url)
+        cache[url] = data
+        return data
+        
