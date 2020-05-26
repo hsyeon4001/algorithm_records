@@ -17,3 +17,4 @@
 - 20.05.20 백준 6단계 풀이 commit (3)
 - 20.05.24 Binary Search (백준#1920)
 - 20.05.25 Brute Force (백준#7568)
+- 20.05.26 Recursive Function (백준#10872)

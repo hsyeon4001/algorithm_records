@@ -1,3 +1,4 @@
+#백준 7568
 n = int(input())
 case = []
 for i in range(n):
