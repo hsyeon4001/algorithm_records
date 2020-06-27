@@ -126,3 +126,148 @@ def ins_sort(arr):
         arr[j+1] = key
     return arr
 print(ins_sort([2,4,5,1,3]))
+
+# p100 병합정렬
+def merge_sort(a):
+    n = len(a)
+    if n <= 1:
+        return
+    mid = n // 2
+    g1 = a[:mid]
+    g2 = a[mid:]
+    merge_sort(g1)
+    merge_sort(g2)
+
+    i1 = 0
+    i2 = 0
+    ia = 0
+    while i1 < len(g1) and i2 < len(g2):
+        if g1[i1] < g2[i2]:
+            a[ia] = g1[i1]
+            i1 += 1
+            ia += 1
+        else:
+            a[ia] = g2[i2]
+            i2 += 1
+            ia += 1
+
+    while i1 < len(g1):
+        a[ia] = g1[i1]
+        i1 += 1
+        ia += 1
+    while i2 < len(g2):
+        a[ia] = g2[i2]
+        i2 += 1
+        ia += 1
+    
+d = [6, 8, 3, 9, 10, 1, 2, 4, 7, 5]
+merge_sort(d)
+print(d)
+
+# P107 연습문제
+def merge_sort(a):
+    n = len(a)
+    if n <= 1:
+        return
+    
+    mid = n // 2
+    g1 = a[:mid]
+    g2 = a[mid:]
+    merge_sort(g1)
+    merge_sort(g2)
+
+    i1, i2, ia = 0, 0, 0
+    while i1 < len(g1) and i2 < len(g2):
+        if g1[i1] > g2[i2]:
+            a[ia] = g1[i1]
+            i1 += 1
+            ia += 1
+        else:
+            a[ia] = g2[i2]
+            i2 += 1
+            ia += 1
+    
+    while i1 < len(g1):
+        a[ia] = g1[i1]
+        i1 += 1
+        ia += 1
+    while i2 < len(g2):
+        a[ia] = g2[i2]
+        i2 += 1
+        ia += 1
+d = [6, 8, 3, 9, 10, 1, 2, 4, 7, 5]
+merge_sort(d)
+print(d)
+
+# p110 퀵정렬
+def quick_sort(a):
+    n = len(a)
+    if n <= 1:
+        return a
+
+    pivot = a[-1]
+    g1 = []
+    g2 = []
+
+    for i in range(0, n-1):
+        if a[i] < pivot:
+            g1.append(a[i])
+        else:
+            g2.append(a[i])
+    
+    return quick_sort(g1) + [pivot] + quick_sort(g2)
+
+d = [6, 8, 3, 9, 10, 1, 2, 4, 7, 5]
+print(quick_sort(d))
+
+# p115 연습문제(버블정렬)
+def bubble_sort(a):
+    n = len(a)
+    chk = False
+    for i in range(0, n-1):
+        for j in range(i+1, n):
+            if a[i] > a[j]:
+                a[i], a[j] = a[j], a[i]
+    return a
+d = [6, 8, 3, 9, 10, 1, 2, 4, 7, 5]
+bubble_sort(d)
+print(d)
+
+# p123 이분탐색
+def binary_search(a, x):
+    start = 0
+    end = len(a)-1
+
+    while start <= end:
+        mid = (start + end) // 2
+        if x == a[mid]:
+            return mid
+        elif x > a[mid]:
+            start = mid + 1
+        else:
+            end = mid - 1
+    return -1
+d = [1,4,9,16,25,36,49,64,81]
+print(binary_search(d, 36))
+
+# p125 연습문제(미해결)
+def binary_search(a, x):
+    start = 0
+    end = len(a)-1
+    if len(a) == 0:
+        return -1
+
+    mid = (start + end) // 2
+    print(mid)
+    if x == a[mid]:
+        
+    elif x > a[mid]:
+        start = mid + 1
+        binary_search(a[start:], x)
+    else:
+        end = mid - 1
+        binary_search(a[:end], x)
+
+d = [1,4,9,16,25,36,49,64,81]
+print(binary_search(d, 36))
+
