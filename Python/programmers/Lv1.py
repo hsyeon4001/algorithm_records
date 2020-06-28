@@ -106,3 +106,62 @@ def solution(arr):
 
 
 print(solution([1,1,3,3,0,1,1]))
+
+# 내 마음대로 정렬하기
+def solution(strings, n):
+    answer = []
+    length = len(strings)
+    if length <= 1:
+        return strings
+    pivot = strings[-1]
+    g1 = []
+    g2 = []
+    for i in range(0, length-1):
+        if strings[i][n] == pivot[n]:
+            if strings[i] < pivot:
+                g1.append(strings[i])
+            else:
+                g2.append(strings[i])
+        elif strings[i][n] < pivot[n]:
+            g1.append(strings[i])
+        else:
+            g2.append(strings[i])
+    answer = solution(g1, n) + [pivot] + solution(g2, n)
+    return answer
+
+# 문자열 내림차순으로 배치하기
+def solution(s):
+    answer = ''
+    up = []
+    low = []
+    for i in s:
+        if i.isupper():
+            up.append(i)
+        else:
+            low.append(i)
+    low.sort()
+    low.reverse()
+    up.sort()
+    up.reverse()
+    result = low + up
+    answer = ''.join(result)
+    return answer
+
+# 하샤드 수
+def solution(x):
+    answer = True
+    str_x = str(x)
+    arr = list(map(int, str_x))
+    if x % sum(arr) != 0:
+        answer = False
+    return answer
+
+# 행렬의 덧셈
+def solution(arr1, arr2):
+    answer = [[]]
+    for i in range(len(arr1)):
+        for j in range(len(arr1[i])):
+            arr1[i][j] = arr1[i][j] + arr2[i][j]
+            
+    answer = arr1
+    return answer

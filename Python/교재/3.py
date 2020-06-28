@@ -270,4 +270,3 @@ def binary_search(a, x):
 
 d = [1,4,9,16,25,36,49,64,81]
 print(binary_search(d, 36))
-
