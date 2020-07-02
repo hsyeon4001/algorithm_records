@@ -85,3 +85,67 @@ def solution(s):
         i = i.capitalize()
         answer += i + ' '
     return answer[:-1]
+
+# 더 맵게
+import heapq
+def solution(scoville, K):
+    answer = 0
+    heap = []
+    for num in scoville:
+        heapq.heappush(heap, num)
+    
+    while heap[0] < K:
+        try:
+            heapq.heappush(heap, heapq.heappop(heap) + (heapq.heappop(heap) * 2))
+        except IndexError:
+            return -1
+        answer += 1
+    return answer
+print(solution([1,2,3,9,10,12], 7))
+
+# 소수 찾기
+from itertools import permutations
+def solution(numbers):
+    answer = 0
+    arr = []
+    for i in range(len(numbers)):
+        a = list(permutations(numbers, i+1))
+        arr += [int(''.join(i)) for i in a]
+    for i in set(arr):
+        b = 0
+        for j in range(1, i+1):
+            if i % j == 0 and i != 0:
+                b += 1
+            if b >= 3:
+                break
+        if b == 2:
+            answer += 1
+    return answer
+print(solution("011"))
+
+# 가장 큰 수(미해결)
+from itertools import permutations
+def solution(numbers):
+    answer = ''
+    arr = []
+    b = ''
+    for i in range(len(numbers)):
+        a = list(permutations(numbers, i+1))
+    for i in a:
+        int(str(i)[1:-1].replace(', ', ''))
+
+
+    answer = str(max(arr))
+    return answer
+print(solution([6, 10, 2]))
+
+# 큰 수 만들기
+def solution(number, k):
+    answer = ''
+    numbers = list(map(int, number))
+    arr = sorted(numbers)
+    for i in range(k):
+        numbers.remove(arr[i])
+    answer = ''.join(str(numbers))[1:-1].replace(', ', '')
+    return answer
+print(solution('1924', 2))
