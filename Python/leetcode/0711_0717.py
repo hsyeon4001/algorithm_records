@@ -54,3 +54,16 @@ class Solution:
         display_table[0].insert(0, 'Table')
         
         return display_table
+
+# 1461(string)
+class Solution:
+    def hasAllCodes(self, s: str, k: int) -> bool:
+        max_s = int('1' * k, 2)
+        nums = set()
+        for i in range(len(s)-k+1):
+            num = s[i:i+k]
+            nums.add(num)
+        if len(nums)-1 == max_s:
+            return True
+        else:
+            return False
