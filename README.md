@@ -1,6 +1,6 @@
 ## 알고리즘 풀이 기록 저장소입니다.
 #### 사용 언어 : Python
-#### 문제 출처 : https://www.acmicpc.net/
+#### 문제 출처 : https://www.acmicpc.net/, https://www.programmers.co.kr/
 
 * * *
 
@@ -26,3 +26,4 @@
 - 20.07.01 프로그래머스&강의 commit
 - 20.07.02 강의 commit
 - 20.07.07 프로그래머스 commit
+- 20.07.31 leetcode commit
