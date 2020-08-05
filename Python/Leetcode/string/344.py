@@ -8,7 +8,7 @@ class Solution:
             a += 1
             b -= 1
 
-# 2) reverse 함수
+# 2) reverse 함수 => 188ms / 18.2 MB
 class Solution:
     def reverseString(self, s: List[str]) -> None:
         s.reverse()
