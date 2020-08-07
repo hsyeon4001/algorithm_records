@@ -1,8 +1,10 @@
 ## 알고리즘 풀이 기록 저장소입니다.
+
 #### 사용 언어 : Python
+
 #### 문제 출처 : https://www.acmicpc.net/, https://www.programmers.co.kr/, https://leetcode.com/problemset/all/
 
-* * *
+---
 
 - 20.05.09 백준 1단계 풀이 commit
 - 20.05.10 백준 2단계 풀이 commit
@@ -31,3 +33,4 @@
 - 20.08.04 leetcode commit
 - 20.08.05 leetcode commit
 - 20.08.06 leetcode commit
+- 20.08.07 leetcode commit
