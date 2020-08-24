@@ -25,3 +25,4 @@
 - 20.08.18 leetcode commit(linear/hashTable_Q771)
 - 20.08.20 leetcode commit(linear/hashTable_Q3)
 - 20.08.21 leetcode commit(linear/hashTable_Q387)
+- 20.08.24 leetcode commit(linear/hashTable_Q389)
