@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # 350. Intersection of Two Arrays II
-=======
-# 387. First Unique Character in a String
->>>>>>> 7a914e6e24f72a985b59da732fa19a37773aa497
 # 1) for문 => 84ms / 14MB
 class Solution:
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
