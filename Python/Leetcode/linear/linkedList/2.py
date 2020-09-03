@@ -1,4 +1,4 @@
-# 21. Merge Two Sorted Lists
+# 2. Add Two Numbers
 # 1) 자료형 변환 => 124ms / 13.7MB
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
