@@ -32,3 +32,4 @@
 - 20.08.31 leetcode commit(linear/linkedList_Q206)
 - 20.09.01 leetcode commit(linear/linkedList_Q2)
 - 20.09.03 leetcode commit(linear/linkedList_Q24)
+- 20.09.04 leetcode commit(linear/linkedList_Q328)
