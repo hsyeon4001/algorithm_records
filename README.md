@@ -37,3 +37,4 @@
 - 20.10.21 leetcode commit(linear/stack&queue_Q739)
 - 20.10.27 leetcode commit(linear/hashTable_Q347)
 - 20.10.29 leetcode commit(string_Q1404)
+- 20.11.02 leetcode commit(string_Q1324)
